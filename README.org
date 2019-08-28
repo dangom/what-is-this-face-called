@@ -1,0 +1,23 @@
+#+TITLE: what-is-this-face-called.el
+
+Search stack overflow no more. Find out without efforts what the face of the thing at point is called.
+
+* Installation
+
+Put this file somewhere in your load path and call:
+#+BEGIN_SRC emacs-lisp
+(use-package what-is-this-face-called :demand t)
+#+END_SRC
+
+or via straight:
+
+#+BEGIN_SRC emacs-lisp
+(use-package what-is-this-face-called
+ :straight (what-is-this-face-called :type git :host github :repo "dangom/what-is-this-face-called")
+ :demand t)
+#+END_SRC
+
+
+* Usage
+
+Simply call =M-x what-is-this-face-called= and you'll know what the face at point is.
